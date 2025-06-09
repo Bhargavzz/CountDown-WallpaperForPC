@@ -1,3 +1,4 @@
+```markdown
 # CountDown-WallpaperForPC
 Set Your Wallpaper to Display a Countdown for Any Date
 
@@ -51,17 +52,27 @@ python countdown.py
 ```
 The wallpaper will update automatically with the number of days remaining.
 
-## Automation (Optional)
+## Automation (Recommended)
 
-### Step 5: Automate Daily Updates on Windows
+### Step 5: Automate Updates on Windows
 1. Open **Task Scheduler**
 2. Create a **Basic Task**
-3. Set trigger to **Daily**
+3. Set **two triggers**:
+   - **At startup** (for all users)
+   - **At log on** (for current user)
 4. Set action to **Start a Program**
 5. Configure:
    - Program/script: Path to your Python executable (`python.exe`)
    - Add arguments: Full path to your script (e.g. `"C:\Users\vishn\OneDrive\Desktop\Countdown\countdown.py"`)
    - Start in: Directory containing your script (e.g. `C:\Users\vishn\OneDrive\Desktop\Countdown\`)
+6. In **Conditions tab**:
+   - Uncheck "Start the task only if the computer is on AC power"
+   - Uncheck "Start only if idle"
+   - Uncheck "Stop if the computer ceases to be idle"
+7. In **Settings tab**:
+   - Check "Run task as soon as possible after a scheduled start is missed"
+   - Check "Stop the task if it runs longer than:" (set to 1 minute)
+   - Check "If the running task does not end when requested, force it to stop"
 
 ## Troubleshooting
 - **Font issues**: Verify the font file exists at the specified path
@@ -81,5 +92,8 @@ The wallpaper will update automatically with the number of days remaining.
 - Optional background image support
 - Simple setup and configuration
 
-> **Note**: The script must remain in its folder with any required assets (fonts/images) for daily updates to work correctly.
+> **Note**: The script must remain in its folder with any required assets (fonts/images) for updates to work correctly. Automation ensures the countdown updates at system startup and user login.
+```
 
+
+This setup ensures the wallpaper updates immediately when you start your computer and when you log in, providing the most up-to-date countdown display.
