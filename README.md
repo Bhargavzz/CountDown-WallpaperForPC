@@ -13,8 +13,10 @@ Automatically set your desktop wallpaper to display a countdown to any date. The
 - Python 3.x installed
 - Windows OS (for automatic wallpaper setting)
 
-![Countdown Wallpaper Example](![image](https://github.com/user-attachments/assets/55ecdbe4-afe9-4bdc-aec0-6eae8cb984ed)
-)
+![Countdown Wallpaper Example]
+
+![image](https://github.com/user-attachments/assets/2bed6e66-0a4c-4fe9-b8cf-525950dc0d6c)
+
 
 ## Installation
 
